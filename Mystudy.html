@@ -141,3 +141,323 @@
 
 3.4강의
 -->
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title>Position</title>
+        <style>
+            body,html{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                height: 400%;
+                background-color: red;
+            }
+            /* #box1{
+                height: 300px;
+                width: 300px;
+                background-color: yellow;
+                position: static;
+            }
+            #box2{
+                height: 300px;
+                width: 100%;
+                background-color: green;
+                position: fixed;
+                top:10px;
+                bottom: 30px;   
+                left: 0;
+            } */
+            .abs-box{
+                width: 400px;
+                height: 400px;
+                background-color: yellow;
+                position: relative;
+            }
+            .abs-child{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+        <div id="box1">
+            <div class="box-child"></div>
+        </div>
+        <div id ="box2">
+            <div class="box-child"></div>
+        </div>
+    </body>
+</html>
+
+3.5강의 -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title>flex</title>
+        <style>
+            html, body{
+                height: 100%;
+            }
+            .box{
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+
+
+
+            }
+            .father{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: 100%;
+                flex-direction: row-reverse;
+                flex-wrap: no-wrapr;
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+
+       </div>
+   </body>
+</html> 
+
+3.6강의
+-->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title>Selectors and Pseudo Selectors</title>
+        <style>
+            input[type="submit"]{
+                background-color: red;
+            }
+            /* input[type="password"]{
+                background-color: blue;
+            } */
+            input[required="required"]{
+                background-color: red;
+            }
+            input{
+                border: 1px solid yellow;
+            }
+            .box{
+                background-color: green;
+                display: block;
+                height: 100px;
+                border: 1px solid black;
+            }
+            .box:last-child{
+                background-color: pink;
+            }
+            .box:nth-child(3n+2){
+                background-color: purple;
+            }
+            .box_child{
+                background-color: red;
+                height: 50px;
+            }
+            /* .container > .box{
+                background-color: turquoise;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="box_child"></div>
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box">
+                <input type="password" required="required">
+                <input type="submit" class="submit">
+            </div>
+       </div>
+   </body>
+</html> 
+3.7강의
+-->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title>CSS States</title>
+        <style>
+            .box{
+                background-color: red;
+                font-size: 40px;
+
+            }
+            .box:hover{
+                background-color: pink;
+            }
+            .box:active{
+                background-color: green;
+            }
+            .box:focus{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <textarea class="box">lalalalalalala</textarea>        
+   </body>
+</html> 
+3.8강의
+-->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title>Transitions</title>
+        <style>
+            .box{
+                background-color: green;
+                color: white;
+                transition: all 0.5s ease-in-out;
+            }
+            .box:visited{
+                background-color: red;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <span class="box">Text</span>
+   </body>
+</html>  
+4.1 강의
+-->
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title>Transformations</title>
+        <style>
+            .box{
+                transform: rotate(20deg);
+                width: 500px;
+                height: 500px;
+                background: red;
+                transition: transform .5s ease-in-out;        
+            }
+            .box:hover{
+                transform: rotate(1turn) scale(.5, .5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+   </body>
+</html>  
+
+4.2강의
+-->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title></title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: red;
+                animation: 5s scaleAndRotateSquare infinite ease-in-out;
+            }
+            @keyframes scaleAndRotateSquare{
+                0%{
+                    transform: none;
+                }
+                50%{
+                    transform: rotate(1turn) scale(.5, .5);
+                }
+                100%{
+                    transform: none;
+                    color: white;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">11</div>
+   </body>
+</html>  
+4.3 강의
+-->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to my Kakao clone">
+        <title></title>
+        <style>
+            body{
+                background-color: green;
+            }
+            @media screen and (min-width:320px) and (max-width:640px){
+                body{
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+   </body>
+</html>  
+
+4.4강의 
+-->
